@@ -23,8 +23,8 @@ public class Main {
         String[] buffer =  input.split(" ");
         String operation = buffer[1];
 
-        int value1 = 0;
-        int value2 = 0;
+        int value1;
+        int value2;
 
         if (buffer.length != 3){
             throw new Exception("Некорректная длина операции");
@@ -48,7 +48,7 @@ public class Main {
     }
 
     static void Calculate(int value1, int value2, String operation) throws Exception {
-        long result = 0;
+        long result;
         switch (operation) {
             case ("+") -> result = value1 + value2;
             case ("-") -> result = value1 - value2;
@@ -59,6 +59,3 @@ public class Main {
         System.out.println(result);
     }
 }
-
-
-
