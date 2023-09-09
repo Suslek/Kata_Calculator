@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Map<String, Integer> dictionary = new HashMap<String, Integer>();
+        Map<String, Integer> dictionary = new HashMap<>();
         dictionary.put("I", 1);
         dictionary.put("V", 5);
         dictionary.put("X", 10);
